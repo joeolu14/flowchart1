@@ -1,0 +1,945 @@
+{
+  "start": {
+    "identity": 193,
+    "labels": ["Vendor"],
+    "properties": {
+      "name": "萬鈞科技股份有限公司",
+      "country": "TW",
+      "id": "0001231951",
+      "city": "台中市霧峰區"
+    }
+  },
+  "end": {
+    "identity": 13800,
+    "labels": ["Customer"],
+    "properties": {
+      "name": "（株）スズケン　阪神物流センター",
+      "id": "3000216198",
+      "class": "Wholesalers"
+    }
+  },
+  "segments": [
+    {
+      "start": {
+        "identity": 193,
+        "labels": ["Vendor"],
+        "properties": {
+          "name": "萬鈞科技股份有限公司",
+          "country": "TW",
+          "id": "0001231951",
+          "city": "台中市霧峰區"
+        }
+      },
+      "relationship": {
+        "identity": 62003,
+        "start": 193,
+        "end": 28659,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 28659,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "2000908900",
+          "unit": "PC",
+          "from_vendor": "0001231951",
+          "quantity": 6000.0,
+          "id": "Vendor-6000.000-PC-2000908900-CT31320111-TW09-2017-06-01",
+          "from_material": "CT31320111",
+          "source": "Vendor",
+          "happened": "2017-06-01"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 28659,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "2000908900",
+          "unit": "PC",
+          "from_vendor": "0001231951",
+          "quantity": 6000.0,
+          "id": "Vendor-6000.000-PC-2000908900-CT31320111-TW09-2017-06-01",
+          "from_material": "CT31320111",
+          "source": "Vendor",
+          "happened": "2017-06-01"
+        }
+      },
+      "relationship": {
+        "identity": 62005,
+        "start": 28659,
+        "end": 12869,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 12869,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "2000908900",
+          "site": "TW09",
+          "id": "2000908900-CT31320111-TW09",
+          "material": "CT31320111"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 12869,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "2000908900",
+          "site": "TW09",
+          "id": "2000908900-CT31320111-TW09",
+          "material": "CT31320111"
+        }
+      },
+      "relationship": {
+        "identity": 62585,
+        "start": 12869,
+        "end": 29013,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 29013,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "2000908900",
+          "unit": "PC",
+          "from_site": "TW09",
+          "quantity": 80.0,
+          "from_material": "CT31320111",
+          "id": "Inventory-80.000-PC-2000908900-CT31320111-TW09-2018-03-08",
+          "source": "Inventory",
+          "happened": "2018-03-08"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 29013,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "2000908900",
+          "unit": "PC",
+          "from_site": "TW09",
+          "quantity": 80.0,
+          "from_material": "CT31320111",
+          "id": "Inventory-80.000-PC-2000908900-CT31320111-TW09-2018-03-08",
+          "source": "Inventory",
+          "happened": "2018-03-08"
+        }
+      },
+      "relationship": {
+        "identity": 62550,
+        "start": 29013,
+        "end": 29031,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 29031,
+        "labels": ["WIP"],
+        "properties": {
+          "batch": "W52507",
+          "site": "TW09",
+          "id": "W52507-TW09"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 29031,
+        "labels": ["WIP"],
+        "properties": {
+          "batch": "W52507",
+          "site": "TW09",
+          "id": "W52507-TW09"
+        }
+      },
+      "relationship": {
+        "identity": 162074,
+        "start": 29031,
+        "end": 80386,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80386,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W52507",
+          "from_site": "TW09",
+          "unit": "CAP",
+          "quantity": 3391141.0,
+          "id": "WIP-3391141.000-CAP-W52507-H000202842-TW09-2018-03-07",
+          "from_material": "H000202842",
+          "source": "WIP",
+          "happened": "2018-03-07"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80386,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W52507",
+          "from_site": "TW09",
+          "unit": "CAP",
+          "quantity": 3391141.0,
+          "id": "WIP-3391141.000-CAP-W52507-H000202842-TW09-2018-03-07",
+          "from_material": "H000202842",
+          "source": "WIP",
+          "happened": "2018-03-07"
+        }
+      },
+      "relationship": {
+        "identity": 162076,
+        "start": 80386,
+        "end": 80387,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80387,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "W52507",
+          "site": "TW09",
+          "id": "W52507-H000202842-TW09",
+          "material": "H000202842"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80387,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "W52507",
+          "site": "TW09",
+          "id": "W52507-H000202842-TW09",
+          "material": "H000202842"
+        }
+      },
+      "relationship": {
+        "identity": 162084,
+        "start": 80387,
+        "end": 80393,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80393,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W52507",
+          "unit": "CAP",
+          "from_site": "TW09",
+          "quantity": 3391141.0,
+          "from_material": "H000202842",
+          "id": "Inventory-3391141.000-CAP-W52507-H000202842-TW09-2018-03-15",
+          "source": "Inventory",
+          "happened": "2018-03-15"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80393,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W52507",
+          "unit": "CAP",
+          "from_site": "TW09",
+          "quantity": 3391141.0,
+          "from_material": "H000202842",
+          "id": "Inventory-3391141.000-CAP-W52507-H000202842-TW09-2018-03-15",
+          "source": "Inventory",
+          "happened": "2018-03-15"
+        }
+      },
+      "relationship": {
+        "identity": 162090,
+        "start": 80393,
+        "end": 80391,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80391,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "W52507",
+          "site": "BE45",
+          "id": "W52507-H000202842-BE45",
+          "material": "H000202842"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80391,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "W52507",
+          "site": "BE45",
+          "id": "W52507-H000202842-BE45",
+          "material": "H000202842"
+        }
+      },
+      "relationship": {
+        "identity": 162083,
+        "start": 80391,
+        "end": 80392,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80392,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W52507",
+          "unit": "CAP",
+          "from_site": "BE45",
+          "quantity": 3391141.0,
+          "from_material": "H000202842",
+          "id": "Inventory-3391141.000-CAP-W52507-H000202842-BE45-2018-03-15",
+          "source": "Inventory",
+          "happened": "2018-03-15"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80392,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W52507",
+          "unit": "CAP",
+          "from_site": "BE45",
+          "quantity": 3391141.0,
+          "from_material": "H000202842",
+          "id": "Inventory-3391141.000-CAP-W52507-H000202842-BE45-2018-03-15",
+          "source": "Inventory",
+          "happened": "2018-03-15"
+        }
+      },
+      "relationship": {
+        "identity": 162089,
+        "start": 80392,
+        "end": 80247,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80247,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "W52507",
+          "site": "JP08",
+          "id": "W52507-H000202842-JP08",
+          "material": "H000202842"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80247,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "W52507",
+          "site": "JP08",
+          "id": "W52507-H000202842-JP08",
+          "material": "H000202842"
+        }
+      },
+      "relationship": {
+        "identity": 161766,
+        "start": 80247,
+        "end": 80246,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80246,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W52507",
+          "from_site": "JP08",
+          "unit": "CAP",
+          "quantity": 3391141.0,
+          "from_material": "H000202842",
+          "source": "Inventory",
+          "id": "Inventory-3391141.000-CAP-W52507-H000202842-JP08-2018-03-26",
+          "to_batch": "2001006472",
+          "happened": "2018-03-26"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80246,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W52507",
+          "from_site": "JP08",
+          "unit": "CAP",
+          "quantity": 3391141.0,
+          "from_material": "H000202842",
+          "source": "Inventory",
+          "id": "Inventory-3391141.000-CAP-W52507-H000202842-JP08-2018-03-26",
+          "to_batch": "2001006472",
+          "happened": "2018-03-26"
+        }
+      },
+      "relationship": {
+        "identity": 161769,
+        "start": 80246,
+        "end": 80239,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80239,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "2001006472",
+          "site": "JP08",
+          "id": "2001006472-H000202842-JP08",
+          "material": "H000202842"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80239,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "2001006472",
+          "site": "JP08",
+          "id": "2001006472-H000202842-JP08",
+          "material": "H000202842"
+        }
+      },
+      "relationship": {
+        "identity": 161758,
+        "start": 80239,
+        "end": 80242,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80242,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "2001006472",
+          "unit": "CAP",
+          "from_site": "JP08",
+          "quantity": 3391141.0,
+          "from_material": "H000202842",
+          "id": "Inventory-3391141.000-CAP-2001006472-H000202842-JP08-2018-04-24",
+          "source": "Inventory",
+          "happened": "2018-04-24"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80242,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "2001006472",
+          "unit": "CAP",
+          "from_site": "JP08",
+          "quantity": 3391141.0,
+          "from_material": "H000202842",
+          "id": "Inventory-3391141.000-CAP-2001006472-H000202842-JP08-2018-04-24",
+          "source": "Inventory",
+          "happened": "2018-04-24"
+        }
+      },
+      "relationship": {
+        "identity": 161761,
+        "start": 80242,
+        "end": 80233,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80233,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "2001006472",
+          "site": "JP01",
+          "id": "2001006472-H000202842-JP01",
+          "material": "H000202842"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80233,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "2001006472",
+          "site": "JP01",
+          "id": "2001006472-H000202842-JP01",
+          "material": "H000202842"
+        }
+      },
+      "relationship": {
+        "identity": 161744,
+        "start": 80233,
+        "end": 80232,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80232,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "2001006472",
+          "unit": "CAP",
+          "from_site": "JP01",
+          "quantity": 3390541.0,
+          "from_material": "H000202842",
+          "id": "Inventory-3390541.000-CAP-2001006472-H000202842-JP01-2018-05-16",
+          "source": "Inventory",
+          "happened": "2018-05-16"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80232,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "2001006472",
+          "unit": "CAP",
+          "from_site": "JP01",
+          "quantity": 3390541.0,
+          "from_material": "H000202842",
+          "id": "Inventory-3390541.000-CAP-2001006472-H000202842-JP01-2018-05-16",
+          "source": "Inventory",
+          "happened": "2018-05-16"
+        }
+      },
+      "relationship": {
+        "identity": 161743,
+        "start": 80232,
+        "end": 76524,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 76524,
+        "labels": ["WIP"],
+        "properties": {
+          "batch": "W99642",
+          "site": "JP01",
+          "id": "W99642-JP01"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 76524,
+        "labels": ["WIP"],
+        "properties": {
+          "batch": "W99642",
+          "site": "JP01",
+          "id": "W99642-JP01"
+        }
+      },
+      "relationship": {
+        "identity": 162105,
+        "start": 76524,
+        "end": 80402,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80402,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W99642",
+          "from_site": "JP01",
+          "unit": "CAP",
+          "quantity": 804090.0,
+          "id": "WIP-804090.000-CAP-W99642-H000014711-JP01-2018-05-21",
+          "from_material": "H000014711",
+          "source": "WIP",
+          "happened": "2018-05-21"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80402,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W99642",
+          "from_site": "JP01",
+          "unit": "CAP",
+          "quantity": 804090.0,
+          "id": "WIP-804090.000-CAP-W99642-H000014711-JP01-2018-05-21",
+          "from_material": "H000014711",
+          "source": "WIP",
+          "happened": "2018-05-21"
+        }
+      },
+      "relationship": {
+        "identity": 162111,
+        "start": 80402,
+        "end": 80400,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80400,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "W99642",
+          "site": "JP01",
+          "id": "W99642-H000014711-JP01",
+          "material": "H000014711"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80400,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "W99642",
+          "site": "JP01",
+          "id": "W99642-H000014711-JP01",
+          "material": "H000014711"
+        }
+      },
+      "relationship": {
+        "identity": 162099,
+        "start": 80400,
+        "end": 80399,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80399,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W99642",
+          "unit": "CAP",
+          "from_site": "JP01",
+          "quantity": 2099160.0,
+          "from_material": "H000014711",
+          "id": "Inventory-2099160.000-CAP-W99642-H000014711-JP01-2018-06-08",
+          "source": "Inventory",
+          "happened": "2018-06-08"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80399,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "W99642",
+          "unit": "CAP",
+          "from_site": "JP01",
+          "quantity": 2099160.0,
+          "from_material": "H000014711",
+          "id": "Inventory-2099160.000-CAP-W99642-H000014711-JP01-2018-06-08",
+          "source": "Inventory",
+          "happened": "2018-06-08"
+        }
+      },
+      "relationship": {
+        "identity": 162096,
+        "start": 80399,
+        "end": 78934,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 78934,
+        "labels": ["WIP"],
+        "properties": {
+          "batch": "X26978",
+          "site": "JP01",
+          "id": "X26978-JP01"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 78934,
+        "labels": ["WIP"],
+        "properties": {
+          "batch": "X26978",
+          "site": "JP01",
+          "id": "X26978-JP01"
+        }
+      },
+      "relationship": {
+        "identity": 162123,
+        "start": 78934,
+        "end": 80413,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80413,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "X26978",
+          "from_site": "JP01",
+          "unit": "EA",
+          "quantity": 19200.0,
+          "id": "WIP-19200.000-EA-X26978-F000167670-JP01-2018-06-08",
+          "from_material": "F000167670",
+          "source": "WIP",
+          "happened": "2018-06-08"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80413,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "X26978",
+          "from_site": "JP01",
+          "unit": "EA",
+          "quantity": 19200.0,
+          "id": "WIP-19200.000-EA-X26978-F000167670-JP01-2018-06-08",
+          "from_material": "F000167670",
+          "source": "WIP",
+          "happened": "2018-06-08"
+        }
+      },
+      "relationship": {
+        "identity": 162127,
+        "start": 80413,
+        "end": 80415,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80415,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "X26978",
+          "site": "JP01",
+          "id": "X26978-F000167670-JP01",
+          "material": "F000167670"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80415,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "X26978",
+          "site": "JP01",
+          "id": "X26978-F000167670-JP01",
+          "material": "F000167670"
+        }
+      },
+      "relationship": {
+        "identity": 162141,
+        "start": 80415,
+        "end": 80426,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80426,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "X26978",
+          "unit": "EA",
+          "from_site": "JP01",
+          "quantity": 33678.0,
+          "from_material": "F000167670",
+          "id": "Inventory-33678.000-EA-X26978-F000167670-JP01-2018-07-23",
+          "source": "Inventory",
+          "happened": "2018-07-23"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80426,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "X26978",
+          "unit": "EA",
+          "from_site": "JP01",
+          "quantity": 33678.0,
+          "from_material": "F000167670",
+          "id": "Inventory-33678.000-EA-X26978-F000167670-JP01-2018-07-23",
+          "source": "Inventory",
+          "happened": "2018-07-23"
+        }
+      },
+      "relationship": {
+        "identity": 162153,
+        "start": 80426,
+        "end": 80423,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80423,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "X26978",
+          "site": "JP08",
+          "id": "X26978-F000167670-JP08",
+          "material": "F000167670"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80423,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "X26978",
+          "site": "JP08",
+          "id": "X26978-F000167670-JP08",
+          "material": "F000167670"
+        }
+      },
+      "relationship": {
+        "identity": 162142,
+        "start": 80423,
+        "end": 80427,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80427,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "X26978",
+          "unit": "EA",
+          "from_site": "JP08",
+          "quantity": 33678.0,
+          "from_material": "F000167670",
+          "id": "Inventory-33678.000-EA-X26978-F000167670-JP08-2018-07-23",
+          "source": "Inventory",
+          "happened": "2018-07-23"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80427,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "X26978",
+          "unit": "EA",
+          "from_site": "JP08",
+          "quantity": 33678.0,
+          "from_material": "F000167670",
+          "id": "Inventory-33678.000-EA-X26978-F000167670-JP08-2018-07-23",
+          "source": "Inventory",
+          "happened": "2018-07-23"
+        }
+      },
+      "relationship": {
+        "identity": 162154,
+        "start": 80427,
+        "end": 80422,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 80422,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "X26978",
+          "site": "JP03",
+          "id": "X26978-F000167670-JP03",
+          "material": "F000167670"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 80422,
+        "labels": ["Inventory"],
+        "properties": {
+          "batch": "X26978",
+          "site": "JP03",
+          "id": "X26978-F000167670-JP03",
+          "material": "F000167670"
+        }
+      },
+      "relationship": {
+        "identity": 505696,
+        "start": 80422,
+        "end": 218923,
+        "type": "OUTPUTS",
+        "properties": {}
+      },
+      "end": {
+        "identity": 218923,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "X26978",
+          "from_site": "JP03",
+          "unit": "EA",
+          "quantity": 60.0,
+          "target_site": "3000216198",
+          "from_material": "F000167670",
+          "id": "Inventory-60.000-EA-X26978-F000167670-JP03-3000216198-2018-12-28",
+          "source": "Inventory",
+          "happened": "2018-12-28"
+        }
+      }
+    },
+    {
+      "start": {
+        "identity": 218923,
+        "labels": ["Portion"],
+        "properties": {
+          "from_batch": "X26978",
+          "from_site": "JP03",
+          "unit": "EA",
+          "quantity": 60.0,
+          "target_site": "3000216198",
+          "from_material": "F000167670",
+          "id": "Inventory-60.000-EA-X26978-F000167670-JP03-3000216198-2018-12-28",
+          "source": "Inventory",
+          "happened": "2018-12-28"
+        }
+      },
+      "relationship": {
+        "identity": 505695,
+        "start": 218923,
+        "end": 13800,
+        "type": "INPUT_TO",
+        "properties": {}
+      },
+      "end": {
+        "identity": 13800,
+        "labels": ["Customer"],
+        "properties": {
+          "name": "（株）スズケン　阪神物流センター",
+          "id": "3000216198",
+          "class": "Wholesalers"
+        }
+      }
+    }
+  ],
+  "length": 28.0
+}
