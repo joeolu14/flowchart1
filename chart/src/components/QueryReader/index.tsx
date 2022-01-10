@@ -18,8 +18,15 @@ interface LinkTypes {
   type: string;
 }
 
+interface LinkTypes2 extends LinkTypes {
+  x1: number;
+  x2: number;
+  y1: number;
+  y2: number;
+}
+
 const QueryReader = () => {
-  const HEIGHT = 700;
+  const HEIGHT = 800;
   const [nodes, setNodes] = useState<ObjTypes[]>([]);
   const [links, setLinks] = useState<LinkTypes[]>([]);
   const [selectedD, setSelectedD] = useState<any>();
@@ -448,6 +455,17 @@ const QueryReader = () => {
             return 350 + i * 40 + 60;
           }
         });
+
+      box
+        .selectAll(".rect_guide")
+        .data(nodes)
+        .join("rect")
+        .attr("width", 300)
+        .attr("height", 50)
+        .attr("stroke", "lightgrey")
+        .attr("fill", "transparent")
+        .attr("x", (d) => xValue - 310)
+        .attr("y", 700);
     }
     return () => {
       llb.remove();
@@ -490,12 +508,15 @@ const QueryReader = () => {
       .attr("fill", "black")
       .attr("d", "M0,-5L10,0L0,5");
 
+    const text2 = box.append("text");
+
     llb
       .selectAll("line")
       .data(linkArr)
       .join("line")
       //@ts-ignore
-      .attr("stroke", (d) => color(d.targetlabel))
+      .attr("stroke", (d) => color(d.type))
+      .attr("stroke-weight", 2)
       .transition()
       .duration(2000)
       //@ts-ignore
@@ -513,8 +534,31 @@ const QueryReader = () => {
       })
       .attr("marker-end", (d) => `url(#arrow-${d.type})`);
 
+    //render the Link Label
+
+    box
+      .selectAll(".icons")
+      .data(linkArr)
+      .join("text")
+      .text((d) => d.type)
+      .attr("stroke", (d) => color(d.type))
+      .attr("x", (d, i) => {
+        if (i < 3) {
+          return xValue - 300 + i * 90;
+        }
+        return xValue - 300 + (i - 3) * 90;
+      })
+      .attr("y", (d, i) => {
+        if (i < 3) {
+          return 715;
+        } else {
+          return 735;
+        }
+      });
+
     return () => {
       llb.remove();
+      box.remove();
     };
   }, [links, color, llb, svg]);
 

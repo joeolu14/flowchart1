@@ -20,8 +20,9 @@ export const sortNodes = (
   setRelationshipState: React.Dispatch<React.SetStateAction<any[]>>,
   links: LinkTypes[]
 ) => {
+  console.log();
   let arr_links: LinkTypes[] = [...links];
-  let rel_links: any = [];
+  let rel_links: LinkTypes[] = [];
   nodeObject?.forEach((res: any) => {
     let objLink: any = {};
     let rel: any = {};
